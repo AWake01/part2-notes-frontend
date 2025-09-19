@@ -49,7 +49,8 @@ export default [
     files: ['**/*.test.{js,jsx}'],
     languageOptions: {
       globals: {
-        ...globals.vitest
+        ...globals.vitest,
+        require: true
       }
     }
   }

@@ -2,14 +2,15 @@
   "name": "part2-notes-frontend",
   "private": true,
   "version": "0.0.0",
-  "type": "module",
+  "type": "commonjs",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
     "server": "json-server -p 3001 db.json",
-    "test": "vitest run"
+    "test": "playwright test",
+    "test:report": "playwright show-report"
   },
   "dependencies": {
     "@testing-library/jest-dom": "^6.8.0",
